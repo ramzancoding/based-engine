@@ -31,7 +31,7 @@ contract RocketMechanic {
 
     // Fonction pour ajouter une quantité aléatoire de nitro
     function addNitro() public {
-        nitroAmount = uint(keccak256(abi.encodePacked(block.timestamp, block.prevrandao))) % 101; // Quantité entre 0 et 100
+        nitroAmount = uint(keccak256(abi.encodePacked(block.timestamp, block.prevrandao))) % 101;
         emit NitroAdded(nitroAmount);
     }
 
