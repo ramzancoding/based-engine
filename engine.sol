@@ -2,7 +2,6 @@
  *Submitted for verification at basescan.org on 2025-01-16
 */
 
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract RocketMechanic {
@@ -12,13 +11,11 @@ contract RocketMechanic {
     bool public isMoonModeOn;
     uint public engineUpgradeLevel;
 
-    // Événements pour suivre les actions effectuées par le mécanicien
     event EngineChanged(string newEngine);
     event NitroAdded(uint amount);
     event MoonModeInstalled(bool state);
     event EngineUpgraded(uint level);
 
-    // Constructeur pour initialiser les paramètres de la fusée
     constructor() {
         engineType = "Standard";
         nitroAmount = 0;
